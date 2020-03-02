@@ -1,0 +1,21 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 20 Jul 2019 22:35:07 at http://pluginspoint.com/demo/i-finger-preview/05_film-town/index.html# +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://pluginspoint.com/demo/i-finger-preview/05_film-town/index.html# -O1 "C:\My Web Sites\Coba COba" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+22:35:10	Warning: 	Note: due to pluginspoint.com remote robots.txt rules, links beginning with these path will be forbidden: /wp-admin/ (see in the options to disable this)
+22:39:30	Warning: 	file not stored in cache due to bogus state (broken size, expected 482620 got 451897): pluginspoint.com/demo/i-finger-preview/05_film-town/img/album-art/3.jpg
+22:40:09	Error: 	"Not Found" (404) at link pluginspoint.com/demo/i-finger-preview/05_film-town/css/images/ui-icons_444444_256x240.png (from pluginspoint.com/demo/i-finger-preview/05_film-town/css/jquery-ui.css)
+22:40:09	Error: 	"Not Found" (404) at link pluginspoint.com/demo/i-finger-preview/05_film-town/css/images/ui-icons_555555_256x240.png (from pluginspoint.com/demo/i-finger-preview/05_film-town/css/jquery-ui.css)
+22:40:09	Error: 	"Not Found" (404) at link pluginspoint.com/demo/i-finger-preview/05_film-town/css/images/ui-icons_ffffff_256x240.png (from pluginspoint.com/demo/i-finger-preview/05_film-town/css/jquery-ui.css)
+22:40:09	Error: 	"Not Found" (404) at link pluginspoint.com/demo/i-finger-preview/05_film-town/css/images/ui-icons_777620_256x240.png (from pluginspoint.com/demo/i-finger-preview/05_film-town/css/jquery-ui.css)
+22:40:09	Error: 	"Not Found" (404) at link pluginspoint.com/demo/i-finger-preview/05_film-town/css/images/ui-icons_cc0000_256x240.png (from pluginspoint.com/demo/i-finger-preview/05_film-town/css/jquery-ui.css)
+22:40:09	Error: 	"Not Found" (404) at link pluginspoint.com/demo/i-finger-preview/05_film-town/css/images/ui-icons_777777_256x240.png (from pluginspoint.com/demo/i-finger-preview/05_film-town/css/jquery-ui.css)
+22:40:10	Error: 	"Not Found" (404) at link pluginspoint.com/demo/i-finger-preview/05_film-town/css/owl.video.play.png (from pluginspoint.com/demo/i-finger-preview/05_film-town/css/owl.carousel.min.css)
+22:40:10	Warning: 	Retry after error -4 (Incorrect length (451897 Bytes, 482620 expected)) at link pluginspoint.com/demo/i-finger-preview/05_film-town/img/album-art/3.jpg (from pluginspoint.com/demo/i-finger-preview/05_film-town/03_index-3.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 5 minutes 4 seconds : 186 links scanned, 177 files written (7333640 bytes overall) [6792975 bytes received at 22345 bytes/sec], 980354 bytes transferred using HTTP compression in 19 files, ratio 12%
+(7 errors, 3 warnings, 0 messages)
