@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model app\models\datatransaksi */
 
 $this->title = $model->id_transaksi;
-$this->params['breadcrumbs'][] = ['label' => 'Datatransaksis', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Data transaksi', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
