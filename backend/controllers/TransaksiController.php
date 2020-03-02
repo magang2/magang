@@ -3,16 +3,16 @@
 namespace backend\controllers;
 
 use Yii;
-use app\models\datapelanggan;
-use app\models\caridatapelanggan;
+use app\models\datatransaksi;
+use app\models\caridatatransaksi;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * PelangganController implements the CRUD actions for datapelanggan model.
+ * TransaksiController implements the CRUD actions for datatransaksi model.
  */
-class PelangganController extends Controller
+class TransaksiController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -30,12 +30,12 @@ class PelangganController extends Controller
     }
 
     /**
-     * Lists all datapelanggan models.
+     * Lists all datatransaksi models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new caridatapelanggan();
+        $searchModel = new caridatatransaksi();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -45,7 +45,7 @@ class PelangganController extends Controller
     }
 
     /**
-     * Displays a single datapelanggan model.
+     * Displays a single datatransaksi model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -58,16 +58,16 @@ class PelangganController extends Controller
     }
 
     /**
-     * Creates a new datapelanggan model.
+     * Creates a new datatransaksi model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new datapelanggan();
+        $model = new datatransaksi();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id_pelanggan]);
+            return $this->redirect(['view', 'id' => $model->id_transaksi]);
         }
 
         return $this->render('create', [
@@ -76,7 +76,7 @@ class PelangganController extends Controller
     }
 
     /**
-     * Updates an existing datapelanggan model.
+     * Updates an existing datatransaksi model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -87,7 +87,7 @@ class PelangganController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id_pelanggan]);
+            return $this->redirect(['view', 'id' => $model->id_transaksi]);
         }
 
         return $this->render('update', [
@@ -96,7 +96,7 @@ class PelangganController extends Controller
     }
 
     /**
-     * Deletes an existing datapelanggan model.
+     * Deletes an existing datatransaksi model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -110,15 +110,15 @@ class PelangganController extends Controller
     }
 
     /**
-     * Finds the datapelanggan model based on its primary key value.
+     * Finds the datatransaksi model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return datapelanggan the loaded model
+     * @return datatransaksi the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = datapelanggan::findOne($id)) !== null) {
+        if (($model = datatransaksi::findOne($id)) !== null) {
             return $model;
         }
 
