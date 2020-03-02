@@ -1,0 +1,2 @@
+# magang
+semangat kamu muaah :*
